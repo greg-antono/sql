@@ -104,7 +104,7 @@ INNER JOIN customer_purchases
 ON customer.customer_id = customer_purchases.customer_id
 GROUP BY  customer.customer_id, customer.customer_first_name, customer.customer_last_name
 HAVING SUM(customer_purchases.quantity * customer_purchases.cost_to_customer_per_qty)  > 2000
-
+ORDER BY customer.customer_last_name, customer.customer_first_name
 
 --Temp Table
 /* 1. Insert the original vendor table into a temp.new_vendor and then add a 10th vendor: 
