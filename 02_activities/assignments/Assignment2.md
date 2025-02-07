@@ -54,7 +54,9 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
 ```
-Your answer...
+The first possible architecture for keeping customer addresses retains records of changes, and is considered Type 2. In such a structure, a unique identifier is associated with the duration of an item before it changes (in this case, a unique identifier is associated with the customer's address while it was in use). In doing so, the store will be able to keep track of the history of changes, and be able to conduct analyses, such as the relationship between customers' purchasing patterns and their residential address. 
+
+The other option, which simply overwrites old values with new values, is considered Type 1. In effect, this option will retain only the latest/newest information in the database. While this is a simple and straightforward way to cope with changes in data, this architecture will prevent us from doing any comparative or historical analysis (e.g. analyzing sales based on customers' previous addresses). 
 ```
 
 ***
@@ -182,5 +184,12 @@ Consider, for example, concepts of labour, bias, LLM proliferation, moderating c
 
 
 ```
-Your thoughts...
+At the core of it all, humans seem to still be at the core of neural nets and machine learning. Or at least that seemed to be the case for Boykis at the time when this article was written in 2019. It is mighty interesting how much our world has changed even in the last 6 years – including the advent of ChatGPT, and the incorporation of technology into our lives in almost every facet of our lives, and I have several, perhaps somewhat disconnected, thoughts about all of this. 
+
+Personally, it seems quite bleak. To me, the human parts of what the author identified in the article have somewhat dissipated by now. Large language models contain a lot of biases: gender, racial, etc. This is a known fact that many linguists have been researching. Since they are trained on existing corpora, which by definition are never truly “complete” or captures how the human population communicates, the use of technologies like ChatGPT and other human-robot interactions seems to be a vicious cycle of such biases being perpetuated indefinitely. 
+
+I am a linguist at heart and by training, and I care deeply about what people speak, how people speak and why people speak the way they do. In the article, the researchers relied on linguists’ efforts (e.g. WordNet, identifying frequencies of word usage, etc) to develop a better understanding for machine learning. But in this day and age, I fear that the way humans use language has already changed with the advent of technology and computer-mediated communication. Experimental linguists are already making use of tools like ChatGPT to generate “language stimuli” for their studies; others are now leaving academia in droves to work on these large language models in tech, many of whom making the off-the-cuff remark that they’ve “joined the dark side”. A recent graduate from our Linguistics program worked for Meta soon after they graduated, working particularly on their AI chatbots for their virtual reality influencers (a series of words that perhaps seemed quite strange even in 2019?), and they shared that “it honestly doesn’t feel right”. Considering how young and old minds alike are already glued to their devices in 2025, I can hardly imagine how humans’ language use will evolve in time to come, especially as we are seeing an explosion of human-computer and human-human-via-computer interactions in this world. I think we should all be wary about humankind’s rapid embrace of technology in pursuit of efficiency and automation, because at the end of the day, we are going to need to remember that we are capable of much more than machines can (or should).
+
+[footnote: I may whine about humanity’s downfall in pursuit of technology, but since academia is also very bleak, who knows what might happen after this degree — a career in language tech perhaps?]
+
 ```
